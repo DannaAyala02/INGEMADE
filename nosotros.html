@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Ingemade</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #1a1a1a;
+        color: #fff;
+    }
+    header {
+        background-color: #000;
+        padding: 40px;
+        animation: fadeIn 1s ease-out;
+    }
+    .logo {
+        max-height: 100px;
+    }
+    .brand-title {
+        font-size: 2rem;
+        margin-left: 15px;
+    }
+    nav a {
+        color: white !important;
+        text-transform: uppercase;
+    }
+    .section {
+        background-color: #2a2a2a;
+        padding: 40px 30px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        animation: fadeIn 1s ease-out 0.3s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    .section h2 {
+        color: #e63946;
+    }
+    .info-box {
+        background-color: #3a3a3a;
+        border-radius: 10px;
+        padding: 25px 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        animation: fadeIn 1s ease-out 0.5s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    .btn-custom {
+        background-color: #e63946;
+        color: white;
+        border: none;
+    }
+    .btn-custom:hover {
+        background-color: #0d3b66;
+    }
+    .btn-custom2 {
+        background-color: #e63946;
+        color: white;
+        border: none;
+    }
+    .btn-custom2:hover {
+        background-color: #7c013b;
+    }
+    footer {
+        background-color: #000;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        animation: fadeIn 1s ease-out 0.8s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container d-flex align-items-center">
+      <img src="logo.jpg" alt="Logo Ingemade" class="logo">
+      <div class="brand-title text-white" style="font-size: 60px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Ingemade</div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="menu.jpg">Menú</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+
+
+    <section class="text-center mb-5">
+      <a href="https://www.openmediavault.org/" class="btn btn-custom mx-2" target="_blank">Open Media Vault</a>
+      <a href="https://www.zoiper.com/" class="btn btn-custom2 mx-2" target="_blank">Zoiper IP</a>
+      <a href="http://192.168.2.2/admin/config.php" class="btn btn-custom mx-2" target="_blank">VOZ IP</a>
+      <a href="http://127.0.0.1/group.htm?id=0&tabid=1" class="btn btn-custom2 mx-2" target="_blank">PRTG MONITOREO</a>
+      <a href="http://192.168.2.4/#/login" class="btn btn-custom mx-2" target="_blank">NAS</a>
+
+    </section>
+
+  
+
+
+    <section class="section">
+      <h2>Nuestra misión en Servicios Web</h2>
+      <p class="mt-3">En Servicios Web, nuestra misión es proporcionar soluciones tecnológicas integrales que optimicen la experiencia de nuestros clientes. Nos dedicamos a ofrecer servicios de almacenamiento en red, telefonía IP y desarrollo web con un enfoque en la calidad y la innovación.</p>
+    </section>
+
+   
+    <section class="section">
+        <h2>Conoce a nuestro equipo</h2>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="info-box text-center">
+              <img src="c1.jpg" alt="Experiencia" class="mb-3" style="width: 230px; height: auto;">
+              <h4>Expertos en NAS</h4>
+              <p>Nuestro equipo cuenta con especialistas en almacenamiento en red NAS utilizando Open Media Vault, garantizando soluciones seguras y eficientes para nuestros clientes.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-box text-center">
+              <img src="c2.jpg" alt="Compromiso" class="mb-3" style="width: 200px; height: auto;">
+              <h4>Profesionales en telefonía IP</h4>
+              <p>Contamos con técnicos capacitados en telefonía IP con Zoiper, asegurando una comunicación clara y efectiva para tu negocio.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-box text-center">
+              <img src="c3.jpg" alt="Innovación" class="mb-3" style="width: 200px; height: auto;">
+              <h4>Desarrolladores Web</h4>
+              <p style="padding-bottom: 28px;">Nuestro equipo de desarrolladores web trabaja continuamente para ofrecerte las mejores soluciones digitales, adaptadas a tus necesidades específicas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+  
+    <section class="section">
+      <h2>Historia de Servicios Web</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="info-box">
+            <h4>Crecimiento y expansión</h4>
+            <p style="padding-bottom: 25px;">A lo largo de los años, hemos crecido de manera constante, adaptándonos a las necesidades del mercado y ampliando nuestro equipo de expertos. Este crecimiento nos ha permitido ofrecer un servicio más completo y personalizado a nuestros clientes.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-box">
+            <h4>Nuestros inicios</h4>
+            <p>Servicios Web fue fundado en 2010 con el objetivo de proporcionar soluciones tecnológicas accesibles y efectivas. Desde entonces, hemos evolucionado y ampliado nuestro portafolio para incluir servicios como NAS y telefonía IP, siempre enfocados en la satisfacción del cliente.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-box">
+            <h4>Nuestra visión hacia el futuro</h4>
+            <p style="padding-bottom: 19px;">Mirando hacia el futuro, en Servicios Web continuamos comprometidos con la innovación y la mejora continua. Nuestro objetivo es seguir liderando en el sector de servicios tecnológicos, ofreciendo siempre lo mejor a nuestros clientes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Ingemade. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
